@@ -1,8 +1,10 @@
+// declaring service workers
 const APP_PREFIX = 'Budget-Tracker';
 const VERSION = 'version_01';
 
 const CACHE_NAME = APP_PREFIX + VERSION;
 
+// files to cache by service worker logic
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
