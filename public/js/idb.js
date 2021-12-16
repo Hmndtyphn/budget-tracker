@@ -1,6 +1,5 @@
 // variable for database connection
 let db;
-
 // connect to indexedDB database, and set to version 1
 const request = indexedDB.open('budget_tracker', 1);
 
