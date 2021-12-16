@@ -26,4 +26,12 @@ request.onsuccess = function(event) {
     }
 };
 
+// triggers if error
+request.onerror = function(event) {
+    
+    // logs the error
+    console.log(event.target.errorCode);
+};
+
+
 
