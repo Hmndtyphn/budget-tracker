@@ -52,3 +52,23 @@ self.addEventListener('activate', function (x) {
     )
 });
 
+
+// fetch info from cache data
+self.addEventListener('fetch', function (x) {
+    console.log('fetch request : ' + x.request.url)
+    x.respondWith(
+        caches.match(x.request).then(function (request) {
+            // respond with cache if data is available
+            if (request) {
+                console.log('getting cache data : ' + x.request.url)
+                return request
+                // fetch request if there is no cache data
+            } else {
+                console.log('no files to cache, fetching : ' + x.request.url)
+                return fetch(x.request)
+
+            }
+        })
+    )
+});
+
