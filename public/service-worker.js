@@ -21,3 +21,14 @@ const FILES_TO_CACHE = [
     '/icons/icon-384x384.png',
     '/icons/icon-512x512.png',
 ];
+
+// install service worker
+self.addEventListener('install', function (x) {
+    x.waitUntil(
+        caches.open(CACHE_NAME).then(function (cache) {
+            console.log('installing cache : ' + CACHE_NAME);
+            return cache.addAll(FILES_TO_CACHE)
+        })
+    )
+});
+
