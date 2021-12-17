@@ -32,3 +32,23 @@ self.addEventListener('install', function (x) {
     )
 });
 
+// activate service worker
+self.addEventListener('activate', function (x) {
+    x.waitUntil(
+        caches.keys().then(function (keyList) {
+            let cacheList = keyList.filter(function (key) {
+                return key.indexOf(APP_PREFIX);
+            });
+            cacheList.push(CACHE_NAME);
+            // resolves once all old versions of cache have been updated
+            return Promise.all(keyList.map(function (key, i) {
+                if (cacheList.indexOf(key) === -1) {
+                    console.log('removing cache : ' + keyList[i] );
+                    return caches.delete(keyList[i]);
+                }
+            })
+        );
+    })
+    )
+});
+
