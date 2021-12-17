@@ -33,9 +33,9 @@
   #### Heroku Deployment Link: https://agile-plateau-97433.herokuapp.com/
 
 <p align="center">
-  <img src="images/Screen Shot 2021-12-17 at 11.54.19 AM.png" width="350" title="hover text" alt="">
+  <img src="images/Screen Shot 2021-12-17 at 11.54.19 AM.png" width="750" title="hover text" alt="">
 </p> <br>
 
 <p align="center">
-  <img src="images/Screen Shot 2021-12-17 at 11.55.06 AM.png" width="350" title="hover text" alt="">
+  <img src="images/Screen Shot 2021-12-17 at 11.55.06 AM.png" width="750" title="hover text" alt="">
 </p> <br>
