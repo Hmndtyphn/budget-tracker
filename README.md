@@ -31,6 +31,7 @@
   #### GitHub Profile: Hmndtyphn
   #### GitHub Repo Link: https://github.com/Hmndtyphn/budget-tracker
   #### Heroku Deployment Link: https://agile-plateau-97433.herokuapp.com/
+  #### Github Deployment Link: https://hmndtyphn.github.io/budget-tracker/
 
 <p align="center">
   <img src="images/Screen Shot 2021-12-17 at 11.54.19 AM.png" width="750" title="hover text" alt="">
